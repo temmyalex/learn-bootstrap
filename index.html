@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Eksternal CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* ul li {
+            text-decoration: underline;
+        } */
+
+        .menu li {
+            text-decoration: underline;
+        }
+
+        #paragraf1 {
+            /* color: blue; */
+            font-family: 'Verdana', 'Arial';
+        }
+
+        .blue-border {
+            border: 5px solid blue;
+        }
+
+        .paragraf-white {
+            font-size: 3em;
+            border: 1px solid white;
+            font-family: "Arial Black", Verdana;
+            font-style: oblique;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: #009EFF;
+            border: 1px solid #009EFF;
+            border-radius: 1em;
+            padding: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 3 konsep CSS
+        - Internal (Head)
+        - Inline (Tag Element)
+        - Eksternal (Melalui eksternal file / link)
+    -->
+
+    <!-- 
+        Class = Biasanya digunakan untuk elemen yang sifatnya reusable (dapat digunakan di elemen lain)
+        ID = Merupakan attribut yang menandakan bahwa elemen tsb bersifat unik
+     -->
+    <h1>Learn CSS</h1>
+    <ul class="menu">
+        <li>Elemen 1</li>
+        <li>Elemen 2</li>
+        <li>Elemen 3</li>
+    </ul>
+
+    <ul class="menu">
+        <li>Menu 1</li>
+        <li>Menu 2</li>
+        <li>Menu 3</li>
+    </ul>
+
+    <p id="paragraf1" style="font-size: 3em;">Paragraf 1</p>
+    <p id="paragraf1" class="paragraf-white" style="font-size: 3em;">Paragraf 2</p>
+
+    <p class="paragraf blue-border">Paragraf 3</p>
+    <p class="paragraf">Paragraf 4</p>
+
+    <a href="https://google.com" class="btn btn-primary">Get Started</a>
+
+    <!-- Melakukan pemanggil eksternal javascript / jquery / library js secara online -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $("#paragraf1").css("color", "blue");
+        $(".paragraf").css("color", "green");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+h1 {
+    border: 1px solid #000;
+    font-family: 'Arial Black', 'Verdana';
+    border-radius: 2em;
+}
+
+.btn-bg {
+    background-color: #fff;
+    color: #fff;
+    border: 4px solid #fff;
+    font-family: 'abc', 'Arial Black';
+    font-size: 3em;
+}
+
+@font-face {
+    font-family: 'abc';
+    src: url('../fonts/snowywinter.otf');
+}
